@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcarl_cyberlab=self.webpackChunkcarl_cyberlab||[]).push([[453],{8605:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/blog/tags/hello","allTagsPath":"/blog/tags","count":2}')}}]);
