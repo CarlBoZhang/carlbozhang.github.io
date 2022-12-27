@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Carl',
+  tagline: "Welcome to Carl's Cyberlab",
   url: 'https://carlbozhang.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/avatar.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -56,18 +56,44 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       navbar: {
-        title: 'My Site',
+        title: "Carl's Cyberlab",
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/avatar.ico',
         },
         items: [
+          {to: '/blog', label: 'About Me', position: 'left'},
           {
-            type: 'doc',
-            docId: 'intro',
+            //type: 'dropdown',
+            //docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Writeups',
+            items: [
+              {
+                label: 'HackTheBox',
+                to: '/docs/Writeups/HackTheBox/greeting',
+              },
+
+            ], 
+          },
+          {
+            //type: 'dropdown',
+            //docId: 'intro',
+            position: 'left',
+            label: 'CheatSheet',
+            items: [
+              {
+                label: 'Red Team Tool',
+                to: '/docs/Writeups/HackTheBox/greeting',
+              },
+
+            ], 
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -75,52 +101,12 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          //{type: 'localeDropdown',},
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} - Carl Bo Zhang`,
       },
       prism: {
         theme: lightCodeTheme,
