@@ -53,7 +53,7 @@ const config = {
       }),
     ],
   ],
-
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -70,6 +70,7 @@ const config = {
         },
         items: [
           {to: '/blog', label: 'About Me', position: 'left'},
+          /*
           {
             //type: 'dropdown',
             //docId: 'intro',
@@ -83,6 +84,7 @@ const config = {
 
             ], 
           },
+          
           {
             //type: 'dropdown',
             //docId: 'intro',
@@ -96,7 +98,8 @@ const config = {
 
             ], 
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          */
+          //{to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
